@@ -38,7 +38,7 @@ app.use(cors({
 }));
 
 app.io.route('ready', function(req){
-  console.log('hola mundo');
+  console.log('Hello world');
   req.io.emit('response', {data:req.data}) 
   req.io.broadcast('response', {data:req.data})        
 });
